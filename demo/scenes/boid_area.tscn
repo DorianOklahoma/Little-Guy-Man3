@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt4ualau3bwbf"]
+
+[ext_resource type="Script" uid="uid://cmw41qpt38qsu" path="res://scripts/BoidArea.cs" id="1_q3lt5"]
+[ext_resource type="PackedScene" uid="uid://w4ikh700tw27" path="res://scenes/boid.tscn" id="2_5hgtj"]
+
+[node name="BoidArea" type="Node2D"]
+script = ExtResource("1_q3lt5")
+NumberOfBoids = 10
+Boid = ExtResource("2_5hgtj")

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "8FY6XDBBsNo=",
+  "success": true,
+  "projectFilePath": "/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/Assignment 1.csproj",
+  "expectedPackageFiles": [
+    "/Users/dorians/.nuget/packages/godot.sourcegenerators/4.4.1/godot.sourcegenerators.4.4.1.nupkg.sha512",
+    "/Users/dorians/.nuget/packages/godotsharp/4.4.1/godotsharp.4.4.1.nupkg.sha512",
+    "/Users/dorians/.nuget/packages/godotsharpeditor/4.4.1/godotsharpeditor.4.4.1.nupkg.sha512",
+    "/Users/dorians/.nuget/packages/microsoft.netcore.app.ref/8.0.19/microsoft.netcore.app.ref.8.0.19.nupkg.sha512",
+    "/Users/dorians/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.19/microsoft.aspnetcore.app.ref.8.0.19.nupkg.sha512"
+  ],
+  "logs": []
+}

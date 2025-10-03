@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://b08gcpad6yx4m"]
+
+[ext_resource type="Script" uid="uid://myftx3rslwkg" path="res://scripts/projectile.gd" id="1_q3m7n"]
+[ext_resource type="Texture2D" uid="uid://kf5pb3oogjfx" path="res://assets/cannon_ball.png" id="2_softn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6q2a6"]
+radius = 20.025
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_q3m7n"]
+radius = 20.025
+
+[node name="projectile" type="CharacterBody2D"]
+collision_layer = 0
+collision_mask = 2
+script = ExtResource("1_q3m7n")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(5, 5)
+texture = ExtResource("2_softn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_6q2a6")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_q3m7n")
+
+[node name="despawn_timer" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="despawn_timer" to="." method="_on_despawn_timer_timeout"]

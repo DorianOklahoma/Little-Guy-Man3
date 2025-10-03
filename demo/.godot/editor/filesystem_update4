@@ -1,0 +1,8 @@
+res://scenes/boid.tscn
+res://scenes/main_menu.tscn
+res://scenes/game.tscn
+res://scenes/player.tscn
+res://scenes/cannon.tscn
+res://scenes/boid_area.tscn
+res://scripts/Boid.cs
+res://scripts/BoidArea.cs

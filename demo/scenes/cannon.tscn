@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://btcys154wcajq"]
+
+[ext_resource type="Script" uid="uid://bnil3om4scngk" path="res://scripts/cannon.gd" id="1_pxhkx"]
+[ext_resource type="Texture2D" uid="uid://d3gustnbd68sk" path="res://assets/cannon.png" id="2_yjxeu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pxhkx"]
+radius = 20.025
+
+[node name="cannon" type="Node2D"]
+script = ExtResource("1_pxhkx")
+
+[node name="Quake" type="Quake" parent="."]
+scale = Vector2(5, 5)
+texture = ExtResource("2_yjxeu")
+
+[node name="cooldown" type="Timer" parent="."]
+one_shot = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_pxhkx")
+
+[connection signal="quake_finished" from="Quake" to="." method="_on_quake_quake_finished"]
+[connection signal="timeout" from="cooldown" to="." method="_on_cooldown_timeout"]

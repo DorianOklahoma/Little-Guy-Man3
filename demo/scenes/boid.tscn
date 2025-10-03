@@ -1,0 +1,79 @@
+[gd_scene load_steps=10 format=3 uid="uid://w4ikh700tw27"]
+
+[ext_resource type="Texture2D" uid="uid://7xsr44yfg6p5" path="res://assets/basic_flyer.png" id="1_n4whh"]
+[ext_resource type="Script" uid="uid://ctul4vcy6e4xs" path="res://scripts/Boid.cs" id="1_vrn0v"]
+[ext_resource type="Texture2D" uid="uid://bwdmerwcfbnvw" path="res://assets/Wind.png" id="3_5r8tn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0n3de"]
+atlas = ExtResource("3_5r8tn")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i32he"]
+atlas = ExtResource("3_5r8tn")
+region = Rect2(8, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4ugi1"]
+atlas = ExtResource("3_5r8tn")
+region = Rect2(16, 0, 8, 8)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e302v"]
+atlas = ExtResource("3_5r8tn")
+region = Rect2(24, 0, 8, 8)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vrn0v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0n3de")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i32he")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4ugi1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e302v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xur1n"]
+radius = 116.679
+
+[node name="Boid" type="CharacterBody2D" groups=["boid"]]
+scale = Vector2(0.6, 0.6)
+collision_layer = 128
+collision_mask = 0
+script = ExtResource("1_vrn0v")
+MaxSpeed = 400.0
+SeparationWeight = 2.0
+CohesionWeight = 2.0
+RandomFactor = 0.9
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+rotation = 1.5708
+scale = Vector2(5, 5)
+texture = ExtResource("1_n4whh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(5, 5)
+sprite_frames = SubResource("SpriteFrames_vrn0v")
+frame_progress = 0.227134
+speed_scale = 2.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-15, -20, 20, -10, 20, 10, -15, 20)
+
+[node name="DetectionArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 128
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+shape = SubResource("CircleShape2D_xur1n")
+
+[connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_radius_body_entered"]
+[connection signal="body_exited" from="DetectionArea" to="." method="_on_detection_radius_body_exited"]

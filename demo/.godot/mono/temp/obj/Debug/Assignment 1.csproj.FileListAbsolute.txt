@@ -1,0 +1,17 @@
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/bin/Debug/Assignment 1.deps.json
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/bin/Debug/Assignment 1.runtimeconfig.json
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/bin/Debug/Assignment 1.dll
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/bin/Debug/Assignment 1.pdb
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/bin/Debug/GodotSharp.dll
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/bin/Debug/GodotSharpEditor.dll
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/obj/Debug/Assignment 1.csproj.AssemblyReference.cache
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/obj/Debug/Assignment 1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/obj/Debug/Assignment 1.AssemblyInfoInputs.cache
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/obj/Debug/Assignment 1.AssemblyInfo.cs
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/obj/Debug/Assignment 1.csproj.CoreCompileInputs.cache
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/obj/Debug/Assignme.9EE8BD87.Up2Date
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/obj/Debug/Assignment 1.dll
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/obj/Debug/refint/Assignment 1.dll
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/obj/Debug/Assignment 1.pdb
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/obj/Debug/Assignment 1.genruntimeconfig.cache
+/Users/dorians/Desktop/IMG420 2D Game Engines/godot projects/Assignment 3/assignment-3/demo/.godot/mono/temp/obj/Debug/ref/Assignment 1.dll
