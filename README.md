@@ -1,1 +1,7 @@
 # Little-Guy-Man3
+
+Run the main menu scene to start. Start the game and reach the flag. Interact with things by pressing "E" and pick up items by walking over them. You can destroy cannons and enable buttons by interacting with them.
+
+The node Quake adds a shaking effect and a pulsing effect. Both of them have intensity, speed, and duration setting that can be changed. Both can be tured on and off and both emit signals when starting and stopping. The shake works by getting a random normalized vector and multiplying the intensity to it, then it sets the position of the node to that point. After it's done shaking, it resets to its original point. The pulse works by using a formula to get the different sizes within the pulse animation. These features are given here for simple animation effects like when the cannon shoots or a simple animation for the player.
+
+Flocking was implemented as what was supposed to be background flyers. I then changed the flyers to a wind effect, but then realized the wind looks like worms. The boids are background sky worms that bounce off the top and bottom of the screen, while also allowing them to pass through the walls (teleport from right to left and left to right). The three factors for creating boids can be modified in the inspector menu along with their speed, follow radius, separation distance, and a random factor. The random factor makes them choose random directions to add some directional variability.
